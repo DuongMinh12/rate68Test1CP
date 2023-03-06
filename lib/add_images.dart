@@ -17,4 +17,6 @@ class AppImages{
   static String phone = link +'phone.png';
   static String refresh = link +'refresh.png';
   static String sortDescending = link +'sort-descending.png';
+  static String tpic = link +'Tpic.png';
+  static String vpic = link +'Vpic.png';
 }
