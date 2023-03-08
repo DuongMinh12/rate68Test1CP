@@ -54,8 +54,8 @@ class _BodyState extends State<Body> {
         ),
         borderRadius: BorderRadius.circular(30),
       ),
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 16),
+      child: const Padding(
+        padding: EdgeInsets.symmetric(horizontal: 16),
         child: ButtonDropDown(),
       ),
     );

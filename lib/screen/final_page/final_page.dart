@@ -4,8 +4,8 @@ import 'package:testappppp/constants.dart';
 import 'package:testappppp/screen/final_page/components/ButtonIconDd.dart';
 import 'package:testappppp/screen/final_page/components/body.dart';
 
-class FinalPage extends StatelessWidget {
-  const FinalPage({Key? key}) : super(key: key);
+class TestPage extends StatelessWidget {
+  const TestPage({Key? key}) : super(key: key);
   static String routeName = 'finalPage';
   @override
   Widget build(BuildContext context) {
@@ -16,17 +16,27 @@ class FinalPage extends StatelessWidget {
           backgroundColor: Colors.blue,
         ),
         body: Container(
-          padding: EdgeInsets.symmetric(horizontal: 16),
-          child: Column(
-            children: [
-              Text('Live Exchange Rates',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.w600,
-                ) ,)
-            ],
+          margin: EdgeInsets.symmetric(vertical: 16),
+          child: ListView.builder(
+            itemCount: 5,
+            itemBuilder: (context, indext) {
+              return Column(
+                children: [
+                  Container(
+                    margin: EdgeInsets.only(top: 8),
+                      color: Colors.blue,
+                      child: Column(
+                      children: [
+                      Text('TEst 1',
+                      style: TextStyle(
+                      ),),
+                       Text("Text 2"),
+                    ],
+                  )),
+                ],
+              );
+            },
           ),
         ));
   }
 }
-

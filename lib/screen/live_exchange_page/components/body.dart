@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:testappppp/constants.dart';
+import 'package:testappppp/screen/live_exchange_page/components/searchbar.dart';
 
 class BodyLiveRatePage extends StatelessWidget {
   const BodyLiveRatePage({
@@ -9,7 +10,7 @@ class BodyLiveRatePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(top: 24, left: 16, bottom: 40, right: 16),
+      padding: EdgeInsets.only(top: 24, left: 16, right: 16),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
@@ -37,7 +38,7 @@ class BodyLiveRatePage extends StatelessWidget {
             height: 842,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              border: Border.all(width: 1, color: Colors.grey.shade300),
+              border: Border.all(width: 1, color: grey300),
             ),
             child: Column(
               children: [
@@ -56,11 +57,6 @@ class BodyLiveRatePage extends StatelessWidget {
                             indicatorSize: TabBarIndicatorSize.tab,
                             indicatorPadding: EdgeInsets.only(left: 0, right: 24),
                             indicatorColor: kMainColor,
-                            // indicatorColor: kMainColor,
-                            // indicator: UnderlineTabIndicator(
-                            //     borderSide: BorderSide(width: 1.8),
-                            //     insets: EdgeInsets.symmetric(vertical: 8),
-                            // ),
                             tabs: [
                               Tab(
                                 child: Text('Market'),
@@ -74,27 +70,7 @@ class BodyLiveRatePage extends StatelessWidget {
                             ],
                           ),
                         ),
-                        Container(
-                          margin: EdgeInsets.symmetric(vertical: 24),
-                          width: double.infinity,
-                          child: TextField(
-                            decoration: InputDecoration(
-                              contentPadding: EdgeInsets.symmetric(vertical: 10, horizontal: 30),
-                              prefixIcon: Icon(Icons.search),
-                              hintText: 'Search...',
-                              labelStyle: TextStyle(
-                                fontSize: 14,
-                                color: grey400,
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: BorderRadius.circular(8),
-                                borderSide: BorderSide(
-                                  color: Colors.black
-                                )
-                              )
-                            ),
-                          ),
-                        ),
+                        SearchBartxt(),
                         Container(
                           height: 600,
                           width: double.infinity,
@@ -122,3 +98,4 @@ class BodyLiveRatePage extends StatelessWidget {
     );
   }
 }
+

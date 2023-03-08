@@ -7,7 +7,7 @@ import 'package:testappppp/screen/total_page/total_page.dart';
 
 void main()=> runApp(
    MaterialApp(
-    initialRoute: FilterPage.routeName,
+    initialRoute: TestPage.routeName,
      routes: routes,
      debugShowCheckedModeBanner: false,
   )

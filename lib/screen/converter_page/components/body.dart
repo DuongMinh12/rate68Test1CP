@@ -58,8 +58,9 @@ class bodyConverter extends StatelessWidget {
               borderRadius: BorderRadius.circular(12),
               boxShadow: const [
                 BoxShadow(
-                  color: Colors.black12,
-                  blurRadius: 60, // Shadow position
+                  color: boxcolor2,
+                  blurRadius: 60,
+                  offset: Offset(12, 32)// Shadow position
                 ),
               ],
             ),

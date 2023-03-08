@@ -8,7 +8,7 @@ import 'package:testappppp/add_images.dart';
 final Map<String, WidgetBuilder> routes = {
   MainPage.routeName: (context) => MainPage(),
   TotalPage.routeName: (context) => TotalPage(),
-  FinalPage.routeName: (context) => FinalPage(),
+  TestPage.routeName: (context) => TestPage(),
   FilterPage.routeName: (context) => FilterPage(),
 
 };
